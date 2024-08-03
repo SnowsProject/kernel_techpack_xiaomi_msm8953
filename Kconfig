@@ -1,7 +1,4 @@
-menu "techpack"
-
 source "techpack/xiaomi-msm8953/fingerprint/Kconfig"
 source "techpack/xiaomi-msm8953/touchscreen/Kconfig"
 source "techpack/xiaomi-msm8953/leds/Kconfig"
 
-endmenu
