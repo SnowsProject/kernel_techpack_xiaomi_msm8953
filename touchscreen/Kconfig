@@ -1,4 +1,30 @@
 menu "Touchscreen"
 	depends on INPUT_TOUCHSCREEN
 
+source "techpack/xiaomi-msm8953/touchscreen/focaltech_touch/Kconfig"
+
+config TOUCHSCREEN_GT917D
+       tristate "Goodix touchscreens"
+       depends on I2C
+       help
+         Say Y here if you have a GT917D touchscreen.
+         GT917D controllers are multi touch controllers which can
+         report 10 touches at a time.
+
+         If unsure, say N.
+
+         To compile this driver as a module, choose M here: the
+         module will be called GT9xx.
+
+source "techpack/xiaomi-msm8953/touchscreen/gt917d/Kconfig"
+
+config TOUCHSCREEN_COMMON
+	bool "Common touchscreen interface to interact with userspace"
+	default y
+	help
+	  Say Y here if you want to control touchpanel features via
+	  /sys/touchpanel.
+
+	  If unsure, say N.
+
 endmenu

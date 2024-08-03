@@ -1,4 +1,4 @@
-ifeq ($(CONFIG_MACH_XIAOMI_MSM8937),y)
+ifeq ($(CONFIG_MACH_XIAOMI_MSM8953),y)
 
 obj-y += fingerprint/
 obj-$(CONFIG_INPUT_TOUCHSCREEN) += touchscreen/
