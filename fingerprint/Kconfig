@@ -1,6 +1,6 @@
 menu "Fingerprint"
 
-source "techpack/xiaomi_msm8953/fingerprint/fpc/Kconfig"
-source "techpack/xiaomi_msm8953/fingerprint/goodix/Kconfig"
+source "techpack/xiaomi-msm8953/fingerprint/fpc/Kconfig"
+source "techpack/xiaomi-msm8953/fingerprint/goodix/Kconfig"
 
 endmenu
