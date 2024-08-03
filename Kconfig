@@ -8,7 +8,7 @@ config MACH_XIAOMI_MSM8953
 
 if MACH_XIAOMI_MSM8953
 
-source "techpack/xiaomi-msm8937/mach/Kconfig"
+source "techpack/xiaomi-msm8937/touchscreen/Kconfig"
 
 endif # MACH_XIAOMI_MSM8953
 
